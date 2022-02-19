@@ -1,10 +1,10 @@
 import React from "react";
 
-function InputArea() {
+function InputArea(props) {
   return (
     <div className="form">
-      <input onChange={handleChange} type="text" value={inputText} />
-      <button onClick={addItem}>
+      <input onChange={props.changeText} type="text" value={props.valueText} />
+      <button onClick={props.addText}>
         <span>Add</span>
       </button>
     </div>
